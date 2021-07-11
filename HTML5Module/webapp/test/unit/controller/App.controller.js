@@ -10,7 +10,8 @@ sap.ui.define([
 	QUnit.test("I should test the App controller", function (assert) {
 		var oAppController = new Controller();
 		oAppController.onInit();
-		assert.ok(oAppController);
+        assert.ok(oAppController);
+        assert.strictEqual("A", "B", "String matches String");
 	});
 
 });

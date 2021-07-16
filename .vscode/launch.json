@@ -20,6 +20,26 @@
       },
       "envFile": "${workspaceFolder}/HTML5Module/.env2",
       "preLaunchTask": "Build ui5-tinyapp"
+    },
+    {
+      "name": "Run ui5-tinyapp-HTML5Module",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tinyapp-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/nsHTML5Module/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/HTML5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/ui5-tinyapp/HTML5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/HTML5Module/.env3",
+      "preLaunchTask": "Build ui5-tinyapp"
     }
   ]
 }

@@ -11,7 +11,7 @@ sap.ui.define([
 		var oAppController = new Controller();
 		oAppController.onInit();
         assert.ok(oAppController);
-        assert.strictEqual("A", "A", "String matches String");
+        assert.strictEqual("A", "B", "String matches String");
 	});
 
 });

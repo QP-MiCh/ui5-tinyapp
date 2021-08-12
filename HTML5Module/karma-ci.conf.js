@@ -25,7 +25,7 @@ module.exports = function(config) {
                 }
             }
         },
-        reporters: ["progress", "coverage"],
+        reporters: ["progress", "coverage", "cobertura"],
         browsers: ["ChromeHeadless"],
         singleRun: true
     });
